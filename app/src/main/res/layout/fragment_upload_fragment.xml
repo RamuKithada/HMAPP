@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true">
+       <ImageView
+           android:id="@+id/iv_roundicon"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:src="@mipmap/uload_round"
+           android:layout_centerHorizontal="true"/>
+
+       <TextView
+           android:id="@+id/tv_subtitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:layout_below="@+id/iv_roundicon"
+           android:gravity="center"
+           android:text="Please upload your require product"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:textColor="#ffffff"/>
+
+       <Button
+           android:id="@+id/btn_ok"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tv_subtitle"
+           android:layout_centerHorizontal="true"
+           android:text="OK"
+           android:textAllCaps="true"
+           android:textColor="#FFFFFF"
+           android:background="@color/colorOrangebutton"
+           />
+   </RelativeLayout>
+
+</RelativeLayout>

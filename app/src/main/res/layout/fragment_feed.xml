@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg"/>
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="1dp"
+            android:padding="@dimen/back_btn_padding"
+            android:src="@mipmap/back_icon"
+            android:background="@color/back_btn"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEEDS"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:visibility="visible"
+        android:background="@color/colorHomeCategoriesbg">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview_feedslist"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/feed_details_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/title_layout"
+        >
+        <ImageView
+            android:id="@+id/feed_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_below="@+id/feed_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/card_bg"
+            >
+            <TextView
+                android:id="@+id/feed_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="offer name"
+                android:textAllCaps="true"
+                android:textSize="@dimen/title"
+                android:textColor="@color/colorOrangebutton"
+                android:padding="5dp"
+
+
+                />
+            <TextView
+                android:id="@+id/feed_by_merchant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="by merchant"
+                android:textColor="@color/graylite"
+                android:textSize="@dimen/subtitle"
+                android:textAllCaps="true"
+
+
+                />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="dhgfslkjaskjdfhkjdsh dkjfh"
+                android:textAllCaps="true"
+                android:textSize="@dimen/description"
+                android:textColor="@color/black"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

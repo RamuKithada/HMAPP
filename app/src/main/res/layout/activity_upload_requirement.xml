@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colorPrimary">
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="1dp"
+                    android:padding="@dimen/back_btn_padding"
+                    android:src="@mipmap/back_icon"
+                    android:background="@color/back_btn"
+                    android:visibility="visible"
+                    />
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/back_btn"
+                    android:layout_marginLeft="10dp"
+                    android:text="Add Requirements"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_requiredimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Add Tags:"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <com.m.hyderabadmarketingapp.user_module.helperclasses.ContactsCompletionView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Enter Title"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Enter Description Below:"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                />
+            <RelativeLayout
+                android:id="@+id/layout_descriptionbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/commentboxborder"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:minLines="3"
+                    android:lines="3"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:gravity="top|left"
+                    android:textAlignment="gravity"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="SUBMIT"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@color/colorOrangebutton"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

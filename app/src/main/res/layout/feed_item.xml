@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/feed_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@mipmap/profile_img"
+            android:layout_centerVertical="true"
+            />
+        <LinearLayout
+            android:layout_toRightOf="@+id/feed_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/feed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="feed name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorOrangebutton"
+                android:padding="5dp"
+
+
+                />
+
+                <TextView
+                    android:id="@+id/feed_by_merchant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="4200"
+                    android:textColor="@color/gray"
+                    android:textAllCaps="true"
+
+
+                    />
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="4200"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    />
+
+
+            <TextView
+                android:id="@+id/viewall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center|right"
+                android:textAllCaps="true"
+                android:textColor="@color/colorOrangebutton"
+                android:text="@string/viewall"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
